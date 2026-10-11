@@ -11,7 +11,7 @@
 
 ## 这个项目解决什么
 
-在**小米 Z10 手表 / CaremeOS / 各类 Wear 4100·5100 平台固件**这类被深度裁剪的 ROM 上装官方 Vector，会遇到三连击：
+在**小天才 Z10 手表 各类 Wear 5100 平台固件**这类被深度裁剪的 ROM 上装官方 Vector，会遇到三连击：
 
 | # | 现象 | 真实原因 |
 | --- | --- | --- |
@@ -153,4 +153,4 @@ A：apktool 会重排资源、重算 `resources.arsc`，容易和原始包产生
 
 ---
 
-<sub>English summary: this repo patches Vector so it activates and runs correctly on ROMs that ship without the Android Autofill system service (typical for Chinese Wear 4100/5100 smartwatch firmwares such as CaremeOS on the Xiaomi Z10). It fixes three stacked failures — a Compose `PlatformAutofillManagerImpl` crash, the daemon's hardcoded manager-signature check, and missing sepolicy rules — and ships a ready-to-flash Magisk module. See <code>docs/ANALYSIS.md</code> for the technical breakdown.</sub>
+<sub>English summary: this repo patches Vector so it activates and runs correctly on ROMs that ship without the Android Autofill system service (typical for Chinese Wear 5100 smartwatch firmwares such as CaremeOS on the Xiaomi Z10). It fixes three stacked failures — a Compose `PlatformAutofillManagerImpl` crash, the daemon's hardcoded manager-signature check, and missing sepolicy rules — and ships a ready-to-flash Magisk module. See <code>docs/ANALYSIS.md</code> for the technical breakdown.</sub>
